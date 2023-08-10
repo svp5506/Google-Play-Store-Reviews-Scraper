@@ -11,6 +11,6 @@ androidReviews = []
 for review in reviews.findAll('div', attrs={'class': 'h3YV2d'}):  # Updated class name to match the current structure
     androidReviews.append(review.text)  # Use .text to get the review text
 
-df = pd.DataFrame({'Reviews': androidReviews})  # Create a DataFrame with a 'Reviews' column
+dataframe = pd.DataFrame({'Reviews': androidReviews})  # Create a DataFrame with a 'Reviews' column
 
-df.to_csv('androidReviews.csv', index=False)
+dataframe.to_csv('androidReviews.csv', index=False)
